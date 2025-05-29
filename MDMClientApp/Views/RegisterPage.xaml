@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MDMClientApp.Views.RegisterPage"
+             Title="Регистрация">
+    <StackLayout Padding="20">
+        <Entry Placeholder="Имя" x:Name="FirstNameEntry"/>
+        <Entry Placeholder="Фамилия" x:Name="LastNameEntry"/>
+        <Entry Placeholder="Отчество" x:Name="MiddleNameEntry"/>
+        <Entry Placeholder="Email" x:Name="EmailEntry"/>
+        <Entry Placeholder="Пароль" x:Name="PasswordEntry" IsPassword="True"/>
+        <Entry Placeholder="Отдел" x:Name="DepartmentEntry"/>
+        <Entry Placeholder="Должность" x:Name="PositionEntry"/>
+        <Entry Placeholder="Название компании" x:Name="CompanyNameEntry"/>
+        <Button Text="Зарегистрироваться" Clicked="OnRegisterClicked"/>
+    </StackLayout>
+</ContentPage>

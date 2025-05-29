@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MDMClientApp.Views.ProfilePage"
+             Title="Профиль">
+    <StackLayout Padding="20">
+        <Label Text="Имя:" FontAttributes="Bold"/>
+        <Label x:Name="FirstNameLabel"/>
+        <Label Text="Фамилия:" FontAttributes="Bold"/>
+        <Label x:Name="LastNameLabel"/>
+        <Label Text="Отчество:" FontAttributes="Bold"/>
+        <Label x:Name="MiddleNameLabel"/>
+        <Label Text="Отдел:" FontAttributes="Bold"/>
+        <Label x:Name="DepartmentLabel"/>
+        <Label Text="Должность:" FontAttributes="Bold"/>
+        <Label x:Name="PositionLabel"/>
+        <Label Text="Компания:" FontAttributes="Bold"/>
+        <Label x:Name="CompanyLabel"/>
+
+        <!-- Кнопка для настройки 2FA -->
+        <Button Text="Настроить 2FA" Clicked="OnSetupTwoFactorClicked"/>
+
+        <!-- Кнопка для перехода в админ-панель (только для admin) -->
+        <Button x:Name="AdminPanelButton" Text="Админ-панель" Clicked="OnAdminPanelClicked"/>
+
+        <!-- Кнопка для выхода -->
+        <Button Text="Выйти" Clicked="OnLogoutClicked"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MDMClientApp.Views.SetupTwoFactorPage"
+             Title="Настройка 2FA">
+    <StackLayout Padding="20">
+        <Label Text="Отсканируйте QR-код с помощью Google Authenticator" FontSize="Medium"/>
+        <Image x:Name="QrCodeImage" HeightRequest="200" WidthRequest="200"/>
+        <Label Text="Или введите этот ключ вручную:" FontSize="Medium"/>
+        <Label x:Name="ManualKeyLabel" FontSize="Medium" FontAttributes="Bold"/>
+        <Button Text="Продолжить" Clicked="OnContinueClicked"/>
+    </StackLayout>
+</ContentPage>
